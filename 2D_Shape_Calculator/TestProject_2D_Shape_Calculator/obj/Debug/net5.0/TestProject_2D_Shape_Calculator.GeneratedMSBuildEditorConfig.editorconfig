@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TestProject_2D_Shape_Calculator
+build_property.ProjectDir = E:\Programming\ICTPRG432 Develop data-driven applications\AT1\2D_Shape_Calculator\TestProject_2D_Shape_Calculator\
