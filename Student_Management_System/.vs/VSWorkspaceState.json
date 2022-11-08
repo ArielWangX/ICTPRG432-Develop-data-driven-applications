@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HolmesglenStudentManagementSystem",
+    "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem",
+    "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer"
+  ],
+  "SelectedNode": "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer\\StudentDAL.cs",
+  "PreviewInSolutionExplorer": false
+}
