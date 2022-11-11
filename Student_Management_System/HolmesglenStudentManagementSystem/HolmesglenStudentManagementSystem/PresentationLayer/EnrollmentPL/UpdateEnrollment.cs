@@ -14,14 +14,21 @@ namespace HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL
         {
             var enrollment = new Enrollment();
             Console.WriteLine("Updating a new enrollment");
-            Console.Write("Enter student ID: ");
+
+            // enter old student id and subject id to find the target enrollment id
+            Console.WriteLine("First, enter the old student ID: ");
             enrollment.StudentIDFK = Console.ReadLine();
-            Console.Write("Enter subject ID: ");
+            Console.Write("Enter old subject ID: ");
             enrollment.SubjectIDFK = Console.ReadLine();
+
+            Console.Write("Enter updated student ID: ");
+            var updateStudentIDFK = Console.ReadLine();
+            Console.Write("Enter updated subject ID: ");
+            var updateSubjectIDFK = Console.ReadLine();
             
 
             var enrollmentBLL = new EnrollmentBLL();
-            var result = enrollmentBLL.Update(enrollment);
+            var result = enrollmentBLL.Update(enrollment, updateStudentIDFK, updateSubjectIDFK);
 
             if (result == false)
             {

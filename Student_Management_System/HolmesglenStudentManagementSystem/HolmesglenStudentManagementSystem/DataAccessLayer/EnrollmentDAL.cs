@@ -99,28 +99,55 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
             return enrollments;
         }
 
-        // update
-        public void Update(Enrollment enrollment)  // ask 
+        // update       
+        public void Update(Enrollment enrollment, string updateStudentIDFK, string updateSubjectIDFK)
         {
             Connection.Open();
 
+            // find target enrollment ID
             // build the query command
             var command = Connection.CreateCommand();
+
+            // use student id and subject id to find target enrollment ID
+            var targetEnrollmentID = 0;
+            command.CommandText = @"
+                SELECT EnrollmentID
+                FROM Enrollment
+                WHERE StudentID_FK = @a AND SubjectID_FK = @b
+            ";
+            command.Parameters.AddWithValue("a", enrollment.StudentIDFK);
+            command.Parameters.AddWithValue("b", enrollment.SubjectIDFK);
+
+            // execute the query
+            var reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                targetEnrollmentID = reader.GetInt32(0);
+            }// else enrollment = null           
+
+            Connection.Close();
+
+
+            // update the enrollment
+            // build the query command
+            Connection.Open();
+            command = Connection.CreateCommand();
             command.CommandText = @"
                 UPDATE Enrollment
                 SET StudentID_FK = @a,
                     SubjectID_FK = @b                  
                 WHERE EnrollmentID = @c
             ";
-            command.Parameters.AddWithValue("a", enrollment.StudentIDFK);
-            command.Parameters.AddWithValue("b", enrollment.SubjectIDFK);
-            command.Parameters.AddWithValue("c", enrollment.Id);
+            command.Parameters.AddWithValue("a", updateStudentIDFK);
+            command.Parameters.AddWithValue("b", updateSubjectIDFK);
+            command.Parameters.AddWithValue("c", targetEnrollmentID);
 
             // execute the query
             command.ExecuteReader();
 
             Connection.Close();
         }
+
 
         // delete
         public void Delete(string studentIDFK, string subjectIDFK) 
