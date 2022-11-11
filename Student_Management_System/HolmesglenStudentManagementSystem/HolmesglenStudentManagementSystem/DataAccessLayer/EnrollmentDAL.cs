@@ -123,7 +123,7 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
         }
 
         // delete
-        public void Delete(string studentIDFK, string subjectIDFK) // ask 
+        public void Delete(string studentIDFK, string subjectIDFK) 
         {
             Connection.Open();
 
