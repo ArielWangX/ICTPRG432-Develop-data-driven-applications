@@ -43,7 +43,7 @@ namespace HolmesglenStudentManagementSystem.BusinessLogicLayer
             return true;
         }
 
-        public bool Update(Enrollment enrollment)
+        public bool Update(Enrollment enrollment, string updateStudentIDFK, string updateSubjectIDFK)
         {
             if (GetOne(enrollment.StudentIDFK, enrollment.SubjectIDFK) == null)
             {
@@ -53,7 +53,7 @@ namespace HolmesglenStudentManagementSystem.BusinessLogicLayer
             else
             {
                 // if enrollment studentID_FK and subjectID_Fk exists, update it
-                appDAL.EnrollmentDALInstance.Update(enrollment);
+                appDAL.EnrollmentDALInstance.Update(enrollment, updateStudentIDFK, updateSubjectIDFK);
             }
 
             return true;

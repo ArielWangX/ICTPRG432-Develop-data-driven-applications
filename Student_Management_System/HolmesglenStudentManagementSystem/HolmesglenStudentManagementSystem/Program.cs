@@ -4,6 +4,7 @@ using System;
 using HolmesglenStudentManagementSystem.PresentationLayer.StudentPL;
 using HolmesglenStudentManagementSystem.BusinessLogicLayer;
 using HolmesglenStudentManagementSystem.Models;
+using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -11,6 +12,13 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {
+
+
+
+            var updateEnrollment = new UpdateEnrollment();
+            updateEnrollment.Run();
+
+
             //    (new GetAllStudents()).Run();
             // uncomment the code below for testing
             //(new GetOneStudent()).Run();
@@ -18,12 +26,14 @@ namespace HolmesglenStudentManagementSystem
             //(new UpdateStudent()).Run();
             //(new DeleteStudent()).Run();
             
+            /*
                AppDAL appDAL = new AppDAL();
                Student createStudent1 = new Student("St00020", "Tim","Tom","dsfds@dsgfd");
                 
                StudentBLL studentBLL = new StudentBLL();
             var result = studentBLL.Create(createStudent1);
             Console.WriteLine(result);
+            */
 
           //     appDAL.StudentDALInstance.Create(createStudent1);
           /*
