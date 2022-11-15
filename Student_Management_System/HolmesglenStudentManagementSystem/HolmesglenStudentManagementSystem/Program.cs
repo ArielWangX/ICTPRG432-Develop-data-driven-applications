@@ -11,13 +11,7 @@ namespace HolmesglenStudentManagementSystem
     internal class Program
     {
         static void Main(string[] args)
-        {
-
-
-
-            var updateEnrollment = new UpdateEnrollment();
-            updateEnrollment.Run();
-
+        {         
 
             //    (new GetAllStudents()).Run();
             // uncomment the code below for testing
