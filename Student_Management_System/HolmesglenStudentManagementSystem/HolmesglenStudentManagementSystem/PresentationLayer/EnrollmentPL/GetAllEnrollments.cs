@@ -1,4 +1,5 @@
-﻿using HolmesglenStudentManagementSystem.BusinessLogicLayer;
+﻿using ConsoleTables;
+using HolmesglenStudentManagementSystem.BusinessLogicLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,17 @@ namespace HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL
             }
             else
             {
+                // create table and table heading
+                var table = new ConsoleTable("EnrollmentID", "StudentID_FK", "SubjectID_FK");
+
+                // add table content
                 foreach (var item in result)
                 {
-                    Console.WriteLine($"{item.Id}\t{item.StudentIDFK}\t{item.SubjectIDFK}");
+                    table.AddRow(item.Id, item.StudentIDFK, item.SubjectIDFK);
                 }
+
+                // present table
+                Console.WriteLine(table);  
             }
         }
     }
