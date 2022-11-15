@@ -5,21 +5,25 @@ using HolmesglenStudentManagementSystem.PresentationLayer.StudentPL;
 using HolmesglenStudentManagementSystem.BusinessLogicLayer;
 using HolmesglenStudentManagementSystem.Models;
 using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL;
+using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentReportPL;
 
 namespace HolmesglenStudentManagementSystem
 {
     internal class Program
     {
         static void Main(string[] args)
-        {         
+        {
+            var getAllEnrollmentReport = new GetAllEnrollmentReport();
+            getAllEnrollmentReport.Run();
+
             var getAllEnrollment = new GetAllEnrollments();
             getAllEnrollment.Run();
 
             var getAllStudents = new GetAllStudents();
             getAllStudents.Run();
 
-         //   var getOneEnrollment = new GetOneEnrollment();
-         //   getOneEnrollment.Run();
+            var getOneEnrollment = new GetOneEnrollment();
+            getOneEnrollment.Run();
 
 
             //    (new GetAllStudents()).Run();

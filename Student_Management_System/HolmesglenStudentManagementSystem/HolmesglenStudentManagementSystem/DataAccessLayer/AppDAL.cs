@@ -13,6 +13,7 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
         public StudentDAL StudentDALInstance;
         public SubjectDAL SubjectDALInstance;
         public EnrollmentDAL EnrollmentDALInstance;
+        public EnrollmentReportDAL EnrollmentReportDALInstance;
 
         // private constructor
         public AppDAL() {
@@ -25,6 +26,7 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
             // student todo:
             // implement the EnrollmentDAL class and create a instance here 
             EnrollmentDALInstance = new EnrollmentDAL(Connection);
+            EnrollmentReportDALInstance = new EnrollmentReportDAL(Connection);
         }
     }
     /* sigular pattern
