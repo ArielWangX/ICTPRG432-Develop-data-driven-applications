@@ -12,6 +12,15 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {         
+            var getAllEnrollment = new GetAllEnrollments();
+            getAllEnrollment.Run();
+
+            var getAllStudents = new GetAllStudents();
+            getAllStudents.Run();
+
+         //   var getOneEnrollment = new GetOneEnrollment();
+         //   getOneEnrollment.Run();
+
 
             //    (new GetAllStudents()).Run();
             // uncomment the code below for testing
