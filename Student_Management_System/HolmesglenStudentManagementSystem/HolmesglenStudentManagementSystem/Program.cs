@@ -7,6 +7,10 @@ using HolmesglenStudentManagementSystem.Models;
 using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL;
 using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentReportPL;
 using HolmesglenStudentManagementSystem.PresentationLayer.StudentEnrollmentEmailPL;
+using System.IO;
+using CsvHelper;
+using System.Globalization;
+using HolmesglenStudentManagementSystem.PresentationLayer.ImportStudentFromCSVPL;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -14,8 +18,11 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {
-            var studentEnrollmentEmailPL = new StudentEnrollmentEmailPL();
-            studentEnrollmentEmailPL.Run();
+            var importStudentFromCSVPL = new ImportStudentFromCSVPL();
+            importStudentFromCSVPL.Run();
+
+         //   var studentEnrollmentEmailPL = new StudentEnrollmentEmailPL();
+         //   studentEnrollmentEmailPL.Run();
 
             /*           
                        var getAllEnrollmentReport = new GetAllEnrollmentReport();
