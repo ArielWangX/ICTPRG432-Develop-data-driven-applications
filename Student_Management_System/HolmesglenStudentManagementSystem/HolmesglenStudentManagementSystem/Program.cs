@@ -6,6 +6,7 @@ using HolmesglenStudentManagementSystem.BusinessLogicLayer;
 using HolmesglenStudentManagementSystem.Models;
 using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentPL;
 using HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentReportPL;
+using HolmesglenStudentManagementSystem.PresentationLayer.StudentEnrollmentEmailPL;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -13,18 +14,22 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {
-            var getAllEnrollmentReport = new GetAllEnrollmentReport();
-            getAllEnrollmentReport.Run();
+            var studentEnrollmentEmailPL = new StudentEnrollmentEmailPL();
+            studentEnrollmentEmailPL.Run();
 
-            var getAllEnrollment = new GetAllEnrollments();
-            getAllEnrollment.Run();
+            /*           
+                       var getAllEnrollmentReport = new GetAllEnrollmentReport();
+                       getAllEnrollmentReport.Run();
 
-            var getAllStudents = new GetAllStudents();
-            getAllStudents.Run();
+                       var getAllEnrollment = new GetAllEnrollments();
+                       getAllEnrollment.Run();
 
-            var getOneEnrollment = new GetOneEnrollment();
-            getOneEnrollment.Run();
+                       var getAllStudents = new GetAllStudents();
+                       getAllStudents.Run();
 
+                       var getOneEnrollment = new GetOneEnrollment();
+                       getOneEnrollment.Run();
+           */
 
             //    (new GetAllStudents()).Run();
             // uncomment the code below for testing
@@ -32,7 +37,7 @@ namespace HolmesglenStudentManagementSystem
             //(new CreateStudent()).Run();
             //(new UpdateStudent()).Run();
             //(new DeleteStudent()).Run();
-            
+
             /*
                AppDAL appDAL = new AppDAL();
                Student createStudent1 = new Student("St00020", "Tim","Tom","dsfds@dsgfd");
@@ -42,15 +47,15 @@ namespace HolmesglenStudentManagementSystem
             Console.WriteLine(result);
             */
 
-          //     appDAL.StudentDALInstance.Create(createStudent1);
-          /*
-            var studentList = appDAL.StudentDALInstance.ReadAll();
+            //     appDAL.StudentDALInstance.Create(createStudent1);
+            /*
+              var studentList = appDAL.StudentDALInstance.ReadAll();
 
-               foreach (var item in studentList)
-               {
-                   Console.WriteLine(item.FirstName + item.LastName);
-               }
-           */ 
+                 foreach (var item in studentList)
+                 {
+                     Console.WriteLine(item.FirstName + item.LastName);
+                 }
+             */
 
             /*
             AppDAL appDAL = new AppDAL();
