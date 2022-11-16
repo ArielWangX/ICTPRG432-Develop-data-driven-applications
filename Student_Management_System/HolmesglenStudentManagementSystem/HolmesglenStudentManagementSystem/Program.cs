@@ -11,6 +11,7 @@ using System.IO;
 using CsvHelper;
 using System.Globalization;
 using HolmesglenStudentManagementSystem.PresentationLayer.ImportStudentFromCSVPL;
+using HolmesglenStudentManagementSystem.PresentationLayer.ExportStudentToCSVPL;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -18,11 +19,15 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {
-            var importStudentFromCSVPL = new ImportStudentFromCSVPL();
-            importStudentFromCSVPL.Run();
+            var exportStudentToCSVPL = new ExportStudentToCSVPL();
+            exportStudentToCSVPL.Run();
 
-         //   var studentEnrollmentEmailPL = new StudentEnrollmentEmailPL();
-         //   studentEnrollmentEmailPL.Run();
+
+         //   var importStudentFromCSVPL = new ImportStudentFromCSVPL();
+         //  importStudentFromCSVPL.Run();
+
+            //   var studentEnrollmentEmailPL = new StudentEnrollmentEmailPL();
+            //   studentEnrollmentEmailPL.Run();
 
             /*           
                        var getAllEnrollmentReport = new GetAllEnrollmentReport();
