@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace HolmesglenStudentManagementSystem.Models
 {
-    public class ImportStudentFromCSV
+    public class CSVFormat_Student
     {     
         public string StudentID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
 
-        public ImportStudentFromCSV() { }
+        public CSVFormat_Student() { }
 
-        public ImportStudentFromCSV(string studentID, string firstName, string lastName, string email)
+        public CSVFormat_Student(string studentID, string firstName, string lastName, string email)
         {
             StudentID = studentID;
             FirstName = firstName;

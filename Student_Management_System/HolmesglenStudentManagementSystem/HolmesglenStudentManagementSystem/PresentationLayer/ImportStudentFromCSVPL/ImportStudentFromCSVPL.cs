@@ -23,7 +23,7 @@ namespace HolmesglenStudentManagementSystem.PresentationLayer.ImportStudentFromC
             using (var reader = new StreamReader(@"E:\Programming\ICTPRG432 Develop data-driven applications\AT2\Student.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
-                var studentImportFromCSV = csv.GetRecords<ImportStudentFromCSV>();
+                var studentImportFromCSV = csv.GetRecords<CSVFormat_Student>();
                 foreach (var student in studentImportFromCSV)
                 {
                     studentImport.Add(new Student(student.StudentID, student.FirstName, student.LastName, student.Email));
