@@ -24,8 +24,6 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
             // create all DAL instances
             StudentDALInstance = new StudentDAL(Connection);
             SubjectDALInstance = new SubjectDAL(Connection);
-            // student todo:
-            // implement the EnrollmentDAL class and create a instance here 
             EnrollmentDALInstance = new EnrollmentDAL(Connection);
             EnrollmentReportDALInstance = new EnrollmentReportDAL(Connection);
             StudentEnrollmentEmailDALInstance = new StudentEnrollmentEmailDAL(Connection);
