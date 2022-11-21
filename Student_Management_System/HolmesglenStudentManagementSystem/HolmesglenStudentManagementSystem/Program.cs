@@ -14,6 +14,7 @@ using HolmesglenStudentManagementSystem.PresentationLayer.ImportStudentFromCSVPL
 using HolmesglenStudentManagementSystem.PresentationLayer.ExportStudentToCSVPL;
 using HolmesglenStudentManagementSystem.PresentationLayer.UIPrpjectNumberGuide;
 using HolmesglenStudentManagementSystem.PresentationLayer.SubjectPL;
+using HolmesglenStudentManagementSystem.DataAccessLayer.TestProcedure_CRUD;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -106,7 +107,7 @@ namespace HolmesglenStudentManagementSystem
 
                     // generate enrollment information report
                     case "re1":
-                        var getAllEnrollmentReport = new GetAllEnrollmentReport();
+                        var getAllEnrollmentReport = new GetAllEnrollmentReportPL();
                         getAllEnrollmentReport.Run();
                         break;
 
@@ -149,8 +150,6 @@ namespace HolmesglenStudentManagementSystem
                 Console.ReadKey();
 
             } // while
-          
         }
-
     }
 }

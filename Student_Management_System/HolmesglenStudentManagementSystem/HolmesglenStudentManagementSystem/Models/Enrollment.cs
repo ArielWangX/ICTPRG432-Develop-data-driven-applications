@@ -9,18 +9,18 @@ namespace HolmesglenStudentManagementSystem.Models
     // enrollment data class
     public class Enrollment
     {
-        public int Id;
+        public int? Id;
         public string StudentIDFK;
         public string SubjectIDFK;
 
         public Enrollment()
         {
-            Id = 0;
+            Id = null;
             StudentIDFK = "";
             SubjectIDFK = "";
         }
 
-        public Enrollment(int id, string studentIDFK, string subjectIDFK)
+        public Enrollment(int? id, string studentIDFK, string subjectIDFK)
         {
             Id = id;
             StudentIDFK = studentIDFK;
