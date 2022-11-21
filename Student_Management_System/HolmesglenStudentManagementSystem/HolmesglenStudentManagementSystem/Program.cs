@@ -15,6 +15,8 @@ using HolmesglenStudentManagementSystem.PresentationLayer.ExportStudentToCSVPL;
 using HolmesglenStudentManagementSystem.PresentationLayer.UIPrpjectNumberGuide;
 using HolmesglenStudentManagementSystem.PresentationLayer.SubjectPL;
 using HolmesglenStudentManagementSystem.DataAccessLayer.TestProcedure_CRUD;
+using HolmesglenStudentManagementSystem.DataAccessLayer.DALDisconnected;
+using ConsoleTables;
 
 namespace HolmesglenStudentManagementSystem
 {
@@ -22,6 +24,23 @@ namespace HolmesglenStudentManagementSystem
     {
         static void Main(string[] args)
         {
+            var dalDisconnected = new DALDisconnected(HolmesglenDB.ConnectionString);
+            Console.WriteLine("Reading all student using disconnected mode");
+
+            // create table and table heading
+            var table = new ConsoleTable("StudentID", "FirstName", "LastName", "Email");
+
+            foreach (var student in dalDisconnected.StudentReadAll())
+            {                
+                // add table content                
+                table.AddRow(student.Id, student.FirstName, student.LastName, student.Email);                
+            }
+
+            // present table
+            Console.WriteLine(table);
+
+
+/*
             var uIPrpjectNumberGuidePL = new UIProjectNumberGuidePL();
             bool exist = false;
 
@@ -150,6 +169,7 @@ namespace HolmesglenStudentManagementSystem
                 Console.ReadKey();
 
             } // while
+*/
         }
     }
 }
