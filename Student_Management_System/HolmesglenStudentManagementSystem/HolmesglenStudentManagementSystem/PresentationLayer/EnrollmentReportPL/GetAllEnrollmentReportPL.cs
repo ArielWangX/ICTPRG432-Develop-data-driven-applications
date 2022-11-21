@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HolmesglenStudentManagementSystem.PresentationLayer.EnrollmentReportPL
 {
-    public class GetAllEnrollmentReport : PLBase
+    public class GetAllEnrollmentReportPL : PLBase
     {
         public override void Run()
         {
