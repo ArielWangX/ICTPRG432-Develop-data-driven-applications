@@ -7,4 +7,16 @@
 
 ### Section 1 - CRUD Opereations on Table Student, Table Subject, and Table Enrollment  
 - It presents Table Subject CRUD as an example:
-![Subject CRUD](https://user-images.githubusercontent.com/109891752/212574894-4fb506cd-391f-4f4f-9284-e77dd8bb0227.JPG)
+![Subject CRUD](https://user-images.githubusercontent.com/109891752/212590565-7bc51b46-e16c-4db1-9d19-16dc69b7bf1e.JPG)
+
+### Section 2 - Generate Enrollment Report
+![Enrollment Report](https://user-images.githubusercontent.com/109891752/212590635-b23231a1-5fb1-480a-b129-57312f3ef9a3.JPG)
+
+### Section 3 - Generate Enrollment Status Email
+![Enrollment Email](https://user-images.githubusercontent.com/109891752/212590686-4fe0ce61-2c0d-462d-b85d-a4411a770872.JPG)
+
+### Section 4 - Import Student Information (.csv) to Database
+![Import csv to database](https://user-images.githubusercontent.com/109891752/212590760-e7b128d4-28d6-4f6d-852c-0b37e3fb64cb.JPG)
+
+### Section 5 - Export Student Information (.csv) from Database
+![Export to csv](https://user-images.githubusercontent.com/109891752/212590799-6f241041-390b-4e63-a6dd-5a50648b710a.JPG)
