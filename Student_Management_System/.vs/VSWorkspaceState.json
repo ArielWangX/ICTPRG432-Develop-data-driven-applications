@@ -3,8 +3,8 @@
     "",
     "\\HolmesglenStudentManagementSystem",
     "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem",
-    "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer"
+    "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer",
+    "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer\\TestProcedure_CRUD"
   ],
-  "SelectedNode": "\\HolmesglenStudentManagementSystem\\HolmesglenStudentManagementSystem\\DataAccessLayer\\StudentDAL.cs",
   "PreviewInSolutionExplorer": false
 }

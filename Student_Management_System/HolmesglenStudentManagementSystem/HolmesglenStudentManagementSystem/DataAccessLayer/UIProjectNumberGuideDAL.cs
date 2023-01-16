@@ -44,7 +44,7 @@ namespace HolmesglenStudentManagementSystem.DataAccessLayer
 
                 new UIProjectNumberGuide() { Project = "Import Student CSV to Database ", EnterNumber = "imcsv1"},
                 new UIProjectNumberGuide() { Project = "Export Student Data to CSV File", EnterNumber = "excsv1"},
-                new UIProjectNumberGuide() { Project = "Exist System", EnterNumber = "exist"},
+                new UIProjectNumberGuide() { Project = "Exit System", EnterNumber = "exit"},
             };
 
             UIProjectNumberGuide.AddRange(existSystemNumberGuide);
