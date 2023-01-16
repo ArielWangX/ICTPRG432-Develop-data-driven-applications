@@ -1,5 +1,5 @@
 # Student_Mangement_System Folder - Student Management System
-  - Find full system workflow on Miro [Console-Based Student Management System]()
+  - Find full system workflow on Miro [Console-Based Student Management System](https://miro.com/app/board/uXjVPyK4Noc=/?share_link_id=507512025878)
   - This system connect with SQLite database for storing data
   
 ### Main Console-Based UI
