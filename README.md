@@ -1,5 +1,5 @@
 # Student_Mangement_System Folder - Student Management System
-  - Find full system workflow on Miro [Console-Based Student Management System](https://miro.com/app/board/uXjVPyK4Noc=/?share_link_id=507512025878)
+  Find full system workflow on Miro [Console-Based Student Management System](https://miro.com/app/board/uXjVPyK4Noc=/?share_link_id=507512025878)
   - This is a console-based student management system connecting with SQLite database for storing and retrieving data.
   - Applied three-layer architecture: Data Access Layer, Business Logic Layer, and Presentation Layer.
   - The app generates reports and emails for enrollment information and displays in console.
