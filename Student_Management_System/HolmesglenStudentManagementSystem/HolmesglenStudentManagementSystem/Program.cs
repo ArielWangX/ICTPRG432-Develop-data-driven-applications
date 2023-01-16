@@ -26,10 +26,10 @@ namespace HolmesglenStudentManagementSystem
         static void Main(string[] args)
         {
             var uIPrpjectNumberGuidePL = new UIProjectNumberGuidePL();
-            bool exist = false;
+            bool exit = false;
 
             // if exist is true, exist the system
-            while (!exist)
+            while (!exit)
             {
                 Console.WriteLine("Welcome to Holmesglen student manangement system:");
                 // show project-number table               
@@ -136,9 +136,9 @@ namespace HolmesglenStudentManagementSystem
                         break;
 
 
-                    // exist the system
+                    // exit the system
                     case "exist":
-                        exist = true;
+                        exit = true;
                         break;
 
                     default:
